@@ -1,0 +1,150 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v6.7.2/css/all.css"
+    />
+    <!--Icons Library-->
+    <title>RainRadar | Weather</title>
+  </head>
+  <body>
+    <header>
+      <img src="images/RainRadar.png" alt="logo" />
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero-container">
+        <div class="hero-image">
+          <img src="images/hero-image.jpg" width="100%" alt="Hero Image" />
+        </div>
+
+        <div class="hero-content">
+          <!-- Search box -->
+          <div class="unit-toggle">
+            <p>Choose your units:</p>
+            <button id="metric-btn" class="active">°C</button>
+            <button id="imperial-btn">°F</button>
+          </div>
+          <div class="search">
+            <form id="weather-form">
+              <input
+                id="address-input"
+                type="text"
+                placeholder="Search your Address, City or Zip Code"
+              />
+              <button>Search</button>
+            </form>
+          </div>
+
+          <!-- Search Result -->
+          <div class="search-result">
+            <div class="result-title">
+              <p>TODAY'S WEATHER</p>
+              <span id=""></span>
+            </div>
+
+            <div class="result-container">
+              <div class="left-result">
+                <span id="weather-icon"></span>
+                <span id="temperature"></span>
+              </div>
+
+              <div class="right-result">
+                <span id="weather-text"></span>
+                <span id="real-feel"></span>
+              </div>
+            </div>
+            <span id="location"></span>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Cities Image / List Section-->
+      <section class="list-container">
+        <div class="map-img">
+          <img src="images/charlotte-img.jpg" alt="" />
+        </div>
+
+        <!-- List of 10 Big Cities-->
+        <div class="cities-list">
+          <h2>10 UNITED STATES WEATHER CONDITIONS</h2>
+          <ul>
+            <li>
+              <span class="city-name">Atlanta</span>
+              <span class="city-icon" id="icon-Atlanta"></span>
+              <span class="city-temp" id="temp-Atlanta"></span>
+            </li>
+            <li>
+              <span class="city-name">Austin</span>
+              <span class="city-icon" id="icon-Austin"></span>
+              <span class="city-temp" id="temp-Austin"></span>
+            </li>
+            <li>
+              <span class="city-name">Boston</span>
+              <span class="city-icon" id="icon-Boston"></span>
+              <span class="city-temp" id="temp-Boston"></span>
+            </li>
+            <li>
+              <span class="city-name">Brooklyn</span>
+              <span class="city-icon" id="icon-Brooklyn"></span>
+              <span class="city-temp" id="temp-Brooklyn"></span>
+            </li>
+            <li>
+              <span class="city-name">Chicago</span>
+              <span class="city-icon" id="icon-Chicago"></span>
+              <span class="city-temp" id="temp-Chicago"></span>
+            </li>
+            <li>
+              <span class="city-name">Dallas</span>
+              <span class="city-icon" id="icon-Dallas"></span>
+              <span class="city-temp" id="temp-Dallas"></span>
+            </li>
+            <li>
+              <span class="city-name">Denver</span>
+              <span class="city-icon" id="icon-Denver"></span>
+              <span class="city-temp" id="temp-Denver"></span>
+            </li>
+            <li>
+              <span class="city-name">Houston</span>
+              <span class="city-icon" id="icon-Houston"></span>
+              <span class="city-temp" id="temp-Houston"></span>
+            </li>
+            <li>
+              <span class="city-name">Los Angeles</span>
+              <span class="city-icon" id="icon-LosAngeles"></span>
+              <span class="city-temp" id="temp-LosAngeles"></span>
+            </li>
+            <li>
+              <span class="city-name">Manhattan</span>
+              <span class="city-icon" id="icon-Manhattan"></span>
+              <span class="city-temp" id="temp-Manhattan"></span>
+            </li>
+          </ul>
+        </div>
+
+      </section>
+
+    </main>
+    <footer>
+      <div class="foot-icons">
+        <a
+          href="https://www.linkedin.com/in/elhadji-massow-ndiaye-b11397299/e"
+          target="_blank"
+        >
+          <i class="fa-brands fa-linkedin" style="font-size:30px"></i></a>
+        <a href="https://github.com/MassowNdiaye" target="_blank">
+          <i class="fa-brands fa-square-github" style="font-size:30px"></i></a>
+      </div>
+      <div class="copyright">
+        <p>© 2026 RainRadar. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

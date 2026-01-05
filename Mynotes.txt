@@ -1,0 +1,80 @@
+NOTES:
+
+.parse -> convert JSON string to JavaScript Object
+-----------
+Synchronus -> Every line of code run one after another without runnig something else in background.
+Asynchronus -> Allow to keep run the code while waiting/processing something in background. 
+-----------
+
+setTimeout(() => {
+                                  *Require a function and a timing (,2000)
+}, 2000)
+
+--------------
+
+call stack -> Is the order of how code run, start with main() and stacks all calls and actions
+
+setTimeout -> Is a nodeAPI, so when we call it our call stack stack it and move it on nodeAPI
+
+callback Queue -> This is a staging location where once the timer meet his condition wait to be integrated in the call stack, call stack need to be free
+
+callback -> Is a function that we provide to another function that we can call later
+
+----------------
+
+- Working with setTimeout and callback
+    Logic without timer:
+
+    const add = (a,b, callback) => {
+        callback (a + b);
+    }
+
+
+    add (1,4(sum) => {
+        console.log(sum)
+    })
+
+
+    Logic with timer: 
+
+    const add = (a,b, callback) => {
+        setTimeout(() ={
+            callback(a + b);
+        }, 2000)
+    }
+
+
+-------------------
+
+nodemon -> allow to keep the server run also if keep making changes on the code
+
+nodemon src/app.js -e js,hbs -> Extension to files to watch
+
+Installation not global:
+1. npm install --save-dev nodemon
+2. npx nodemon src/app.js (to run it locally)
+
+
+--------------------
+
+http://localhost:3000/products?search=NewYork&rating=4.7
+
+?
+search= 
+&=
+
+console.log(req.query) -> Allows me to print on the terminal the result
+{ search: 'NewYork', rating: '4.7' }
+
+
+console.log(req.query.search) -> Allow me to grab the result of search 
+
+
+------------------
+
+npm install --save -dev browser -sync -> Allow me to see changes on styling without keep refreshing having my node runnig too
+
+Using: npm run backend (1 terminal)
+npm run frontend (2 terminal)
+
+npm cors -> necessary

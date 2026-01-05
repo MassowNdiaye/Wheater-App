@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "backend": "nodemon src/app.js",
     "frontend": "browser-sync start --proxy localhost:3000 --files public/**/*",
-    "start": "node app.js"
+    "start": "node src/app.js"
   },
   "keywords": [],
   "author": "",
